@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "siongsng_fantasy_world",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "SiongSng's Fantasy World",
+  "description": "",
   "authors": [
-    "Me!"
+    "SiongSng"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://www.rpmtw.ga/",
+    "sources": "https://github.com/RPMTW/SIONGSNGs-Fantasy-World"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT License",
+  "icon": "assets/siongsng_fantasy_world/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "siongsng.fantasyworld.SIONGSNGsFantasyWorld"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "siongsng_fantasy_world.mixins.json"
   ],
 
   "depends": {
@@ -31,8 +31,5 @@
     "fabric": "*",
     "minecraft": "1.17.x",
     "java": ">=16"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
