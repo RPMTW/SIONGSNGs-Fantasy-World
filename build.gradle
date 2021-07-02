@@ -18,6 +18,10 @@ repositories {
 		}
 	}
 }
+configurations {
+	shadow
+	compile.extendsFrom(shadow)
+}
 
 dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -26,13 +30,9 @@ dependencies {
 
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modImplementation("com.terraformersmc:modmenu:2.0.2")
+	shadow("com.terraformersmc:modmenu:2.0.2")
 }
 
-configurations {
-	shadow
-	compile.extendsFrom(shadow)
-}
 
 processResources {
 	inputs.property "version", project.version
